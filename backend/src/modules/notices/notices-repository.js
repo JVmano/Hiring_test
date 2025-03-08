@@ -61,7 +61,7 @@ const addNewNotice = async (payload) => {
   const {
     title,
     status,
-    description,
+    content,
     recipientType,
     recipientRole,
     firstField: recipientFirstField,
@@ -74,7 +74,7 @@ const addNewNotice = async (payload) => {
     `;
   const queryParams = [
     title,
-    description,
+    content,
     status,
     recipientType,
     recipientRole,
@@ -92,7 +92,7 @@ const updateNoticeById = async (payload) => {
     id,
     title,
     status,
-    description,
+    content,
     recipientType,
     recipientRole,
     firstField,
@@ -111,7 +111,7 @@ const updateNoticeById = async (payload) => {
     `;
   const queryParams = [
     title,
-    description,
+    content,
     status,
     recipientType,
     recipientRole,
