@@ -87,8 +87,8 @@ export const NoticeForm: React.FC<Props> = ({
       />
       <TextField
         {...register('content')}
-        error={Boolean(errors.description)}
-        helperText={errors.description?.message}
+        error={Boolean(errors.content)}
+        helperText={errors.content?.message}
         type='text'
         label='Description'
         size='small'
